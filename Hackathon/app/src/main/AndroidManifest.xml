@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.marcin.plockrowery">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Ścieżki rowerowe"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Trasy">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Profil"
+            android:label="Profil" />
+        <activity
+            android:name=".Lupa"
+            android:label="Szukaj znajomych" />
+        <activity
+            android:name=".Ranking"
+            android:label="Ranking" />
+        <activity
+            android:name=".Zaplanuj"
+            android:label="Zaplanuj trasę" />
+        <activity android:name=".Dalej"/>
+        <activity android:name=".Opcje"/>
+        <activity android:name=".Poczatek"/>
+        <activity android:name=".TrasaDluga"/>
+
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="{jbfbLdHkRmFEVn80NjHd}" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="{xwgJFZBqjUpOKbUTic26xQ}" />
+
+        <activity android:name=".Opcje"></activity>
+    </application>
+
+</manifest>
